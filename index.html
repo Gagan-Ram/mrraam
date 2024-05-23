@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagan - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 34);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(5, 5, 62);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(108, 108, 134);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.4rem;
+        }
+
+        .leftSection .btnn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .rightSection img {
+            width: 80%;
+            background-size: cover;
+            border-radius: 14px;
+        }
+
+        .purple {
+            color: rgb(152, 65, 235);
+        }
+
+        #element {
+            color: rgb(152, 65, 235);
+        }
+
+
+
+        main hr {
+            border: 0;
+            background: rgb(186, 134, 236);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+
+        footer {
+            background-color: #0e0e1a;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 123px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Gagan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="/">Services</a></li> -->
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="firstSection">
+        <div class="leftSection">
+            Hi, My name is <span class="purple">Gagan</span>
+            <div>and I am a passionate</div>
+
+            <span id="element"></span>
+            <div class="buttons">
+                <button class="btnn"><a href="Resume-Gagan.pdf" download class="resume">Download Resume</a></button>
+                <button class="btnn"><a href="https://www.linkedin.com/in/gagan-g-0ba442222/" class="resume"
+                        target="_blank">Visit LinkedIn</a></button>
+            </div>
+        </div>
+        <div class="rightSection">
+            <img src="pg.png">
+        </div>
+    </section>
+    <hr>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Gagan.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Gagan G pursing bachelor's of Engineering in Computer Science and
+                        Engineering. Intrested in Web Development, Devops and System Design.
+                        Quick learner and have a great sense of time management. Always ready
+                        to learn new skills and to upgrade with new technologies. Good at analyzing
+                        the problems and finding solution to it.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br> C++, JavaScript, TypeScript, Python, Java </li>
+
+                            <li><span>Frontend & Libraries</span><br>HTML, CSS, ReactJs, MaterialUI, Tailwind css, Bootstrap</li>
+                            <li><span>Backend, Databases & API</span><br>NodeJs, ExpressJs, MongoDB, SQL, PostgreSQL, REST, GraphQL</li>
+
+                            <li><span>Devops Tools</span><br>Amazon Web Services (AWS), Jenkins, Docker, Kubernetes, Ansible, Terraform</li>
+                        
+                            <li><span>Others</span><br>Git, GitHub, Linux, Shell Scripting</li>
+                            <li><span>Fundamentals</span><br>System Design, Data Structures & Algorithms, DBMS, OOPs</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Dayananda Sagar College Of Engineering</span><br>Bachelor of Engineering in Computer
+                                Science and Engineering<br>CGPA : 8.7</li>
+                            <li><span>Jnana Sweekar Pu College (Deeksha Integrated)</span><br>CLASS XII : PERCENTAGE :
+                                94.3</li>
+                            <li><span>Pragathi Vidya Nikethana</span><br>CLASS X : PERCENTAGE : 92.8</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Spontom & Co.</span><br>Intern | Sep 2023 - Nov 2023 | Full Stack Web Development</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!---------portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="onkart.jpg">
+                    <div class="layer">
+                        <h3 >OnKart</h3>
+                        <p>To Automate the rental System so that anyone can rent their
+                            vehicles to verified trusted persons.
+                        </p>
+                        <a href="https://mellifluous-kringle-850b25.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="xflix.jpg">
+                    <div class="layer">
+                        <h3 >Video Curator platform</h3>
+                        <p>A user-friendly video curation platform with video streaming capabilities.
+                        </p>
+                        <a href="https://keen-wisp-5db5d9.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="hospo.jpg">
+                    <div class="layer">
+                        <h3 >Hospo</h3>
+                        <p>Built a doctor-appointment booking website using the MERN stack.</p>
+                        <a href="https://zingy-nougat-bce22c.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <hr>
+    <!---------Contact----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> gaganram2003@outlook.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 82961XXXXX</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gagan-g-0ba442222/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Gagan-Ram/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Resume-Gagan.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="" id="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!--<div class="footer">
+            <div class="footer-first">
+                <h3>Gagan's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>-->
+        <div class="footer-rights">
+            Copyright &#64 www.mrraam.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Devops Engineer.'],
+            typeSpeed: 50,
+            loop: true
+        });
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
